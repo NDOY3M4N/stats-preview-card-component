@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+</head>
+<body class="antialiased bg-main font-display">
+  <div class="p-10 min-h-screen flex items-center justify-center max-w-xl mx-auto md:max-w-5xl">
+    <div class="bg-card rounded-lg overflow-hidden md:flex">
+      <div class="relative md:order-last md:w-1/2">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./images/image-header-desktop.jpg">
+          <img src="./images/image-header-mobile.jpg" class="object-cover w-full h-full" alt="Team working">
+        </picture>
+        <div class="absolute inset-0 pointer-events-none bg-accent mix-blend-multiply"></div>
+      </div>
+
+      <div class="px-5 py-8 flex flex-col space-y-8 text-center md:w-1/2 md:p-12 md:text-left">
+        <div class="space-y-4 md:space-y-6">
+          <h1 class="text-white text-2xl font-bold font-body md:text-4xl">Get <span class="text-accent">insights</span> that help your business grow.</h1>
+
+          <p class="text-white text-opacity-75 leading-relaxed">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center space-y-8 md:flex-row md:space-y-0 md:justify-between">
+          <div>
+            <h2 class="text-white text-2xl font-bold font-body">10k+</h2>
+            <span class="text-white text-opacity-60 text-sm tracking-wider uppercase">companies</span>
+          </div>
+
+          <div>
+            <h2 class="text-white text-2xl font-bold font-body">314</h2>
+            <span class="text-white text-opacity-60 text-sm tracking-wider uppercase">templates</span>
+          </div>
+          <div>
+            <h2 class="text-white text-2xl font-bold font-body">12M+</h2>
+            <span class="text-white text-opacity-60 text-sm tracking-wider uppercase">queries</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
